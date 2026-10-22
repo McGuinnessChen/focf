@@ -84,7 +84,12 @@ def main():
     run_dirs = []
     class PublishedRun(original_logger):
         def __init__(self, *positional, **keywords):
-            super().__init__(*positional, **keywords)
+            values = list(positional)
+            if not diagnostic and method in ("focf", "random_dictionary"):
+                values[5] = {**values[5], "execution_optimization": "cached_cls"}
+            if method == "random_dictionary":
+                values[5]["fidelity"] = "Original random dictionary, probe stream and local updates; cached CLS suffix evaluation"
+            super().__init__(*values, **keywords)
             run_dirs.append(self.run_dir)
     def release_hashes():
         paths = [Path(__file__)]
