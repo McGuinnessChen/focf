@@ -1,0 +1,19 @@
+{
+  "dataset": "cifar100",
+  "seed": 1,
+  "checkpoint": "checkpoints/cifar100-focf-seed1.pt",
+  "samples": 256,
+  "batch_size": 16,
+  "repetitions": 3,
+  "heldout_probes": 64,
+  "budgets": [
+    4,
+    8,
+    16,
+    32
+  ],
+  "fit_seed": 7100001,
+  "accept_seed": 17100001,
+  "heldout_seed": 27100001,
+  "output": "outputs/diagnostics/output_budget-cifar100-seed1.json"
+}

@@ -1,0 +1,24 @@
+{
+  "checkpoint_report": "configs/diagnostics/routing_checkpoints.json",
+  "methods": [
+    "grape",
+    "grape_T10"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "boundaries": [
+    0,
+    1,
+    2,
+    3
+  ],
+  "validation_examples": 256,
+  "batch_size": 16,
+  "output_contrast_class": 9,
+  "hidden_relative_step": 0.001,
+  "output_directory": "outputs/diagnostics/routing",
+  "purpose": "Characterize missing input-dependent downstream information in existing GrAPE checkpoints, independently of FOCF. Exact derivatives are offline measurements only; no training or feedback fitting."
+}

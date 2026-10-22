@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+.env
+cifar10_data/
+cifar100_data/
+tiny_imagenet_data/
+runs/
+outputs/
+checkpoints/
+*.pt
+*.pth
+.DS_Store

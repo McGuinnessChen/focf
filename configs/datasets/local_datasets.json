@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "datasets": {
+    "cifar10": {
+      "files": [
+        {
+          "path": "cifar10_data/cifar-10-batches-py/batches.meta",
+          "size": 158,
+          "sha256": "f962466ef690d46b226450fb9aadc74ba4bc64a76aa526b5827fe4bc5c7125cb"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/data_batch_1",
+          "size": 31035704,
+          "sha256": "54636561a3ce25bd3e19253c6b0d8538147b0ae398331ac4a2d86c6d987368cd"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/data_batch_2",
+          "size": 31035320,
+          "sha256": "766b2cef9fbc745cf056b3152224f7cf77163b330ea9a15f9392beb8b89bc5a8"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/data_batch_3",
+          "size": 31035999,
+          "sha256": "0f00d98ebfb30b3ec0ad19f9756dc2630b89003e10525f5e148445e82aa6a1f9"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/data_batch_4",
+          "size": 31035696,
+          "sha256": "3f7bb240661948b8f4d53e36ec720d8306f5668bd0071dcb4e6c947f78e9682b"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/data_batch_5",
+          "size": 31035623,
+          "sha256": "d91802434d8376bbaeeadf58a737e3a1b12ac839077e931237e0dcd43adcb154"
+        },
+        {
+          "path": "cifar10_data/cifar-10-batches-py/test_batch",
+          "size": 31035526,
+          "sha256": "f53d8d457504f7cff4ea9e021afcf0e0ad8e24a91f3fc42091b8adef61157831"
+        }
+      ]
+    },
+    "cifar100": {
+      "files": [
+        {
+          "path": "cifar100_data/cifar-100-python/meta",
+          "size": 1473,
+          "sha256": "a5d4786345c961390f865e93b434dbd5c6904ce880667e0cb888c97d449f28b9"
+        },
+        {
+          "path": "cifar100_data/cifar-100-python/train",
+          "size": 155249918,
+          "sha256": "735e79b04f092ca3d2e6d07f368c0a7d70d48c48d28865950cc24454cf45129b"
+        },
+        {
+          "path": "cifar100_data/cifar-100-python/test",
+          "size": 31049707,
+          "sha256": "4b67687d9933c4db8f0831104447f15b93774f4f464bd0516f0f0f2ac83b7864"
+        }
+      ]
+    },
+    "tiny_imagenet": {
+      "files": [
+        {
+          "path": "tiny_imagenet_data/tiny-imagenet-200.zip",
+          "size": 248100043,
+          "sha256": "6198c8ae015e2b3e007c7841da39ec069199b9aa3bfa943a462022fe5e43c821"
+        },
+        {
+          "path": "tiny_imagenet_data/tiny-imagenet-200/wnids.txt",
+          "size": 2000,
+          "sha256": "a36eb4b603007f1985cdfbfc5987166a2710b3c6f0f6d3e29636fc129bba527b"
+        },
+        {
+          "path": "tiny_imagenet_data/tiny-imagenet-200/words.txt",
+          "size": 2655750,
+          "sha256": "55df3c6ee75859de344e2834ef65d88d61cec389d57e787be59e942c9b73e9aa"
+        },
+        {
+          "path": "tiny_imagenet_data/tiny-imagenet-200/val/val_annotations.txt",
+          "size": 347377,
+          "sha256": "c37765a8b40fce4f28962bf1847a2537e2781753974cbb2447eeb50ff31130a2"
+        }
+      ]
+    }
+  }
+}

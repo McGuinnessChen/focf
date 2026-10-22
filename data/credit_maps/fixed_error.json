@@ -1,0 +1,207 @@
+{
+  "config": {
+    "seed": 0,
+    "boundary": 0,
+    "output_contrast_class": 9,
+    "batch_size": 32,
+    "probe_seed": 99117,
+    "checkpoints": {
+      "bp": "original_artifact_32195e3a265b",
+      "grape": "original_artifact_c8284a222793",
+      "component": "original_artifact_a67386b2f4d2"
+    }
+  },
+  "baseline_arrays_sha256": "01fbda880491aa4fa1600704ce05544c6916036231e4fba0bf98b058d712d2a0",
+  "array_sha256": "923dede94f9df9b2aa1a573d9ad892255ba76e4fdaca6f4334141901b00c7e58",
+  "seed": 0,
+  "dataset": {
+    "dataset": "cifar10",
+    "num_classes": 10,
+    "data_root": "cifar10_data",
+    "training_samples": 5000,
+    "validation_samples": 1000,
+    "validation_seed": 2027,
+    "validation_indices_sha256": "f5208584b35173ce6df7f36ab254ce62406a38923923f8dd66a1e5084f4de0e1",
+    "augmentation": false,
+    "test_access_policy": "never"
+  },
+  "classes": [
+    "truck",
+    "ship",
+    "cat",
+    "frog"
+  ],
+  "dataset_indices": [
+    5161,
+    38506,
+    42773,
+    49603
+  ],
+  "methods": {
+    "bp": {
+      "checkpoint": "original_artifact_32195e3a265b",
+      "checkpoint_sha256": "115dd185f991cdb550dbdd337610915ef2ae007c2ca764719e5a4d2acf175d39",
+      "checkpoint_epoch": 100,
+      "learning": {
+        "method": "bp",
+        "loss": "cross_entropy",
+        "parameter_scope": "all",
+        "optimizer": "adam",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "feedback_column_lr": 0.1,
+        "aggregation": "mean_estimate",
+        "feedback_seed": 100,
+        "calibration_lr": 0.01,
+        "calibration_momentum": 0.9
+      },
+      "model": {
+        "image_size": 32,
+        "patch_size": 4,
+        "channels": 3,
+        "num_classes": 10,
+        "embed_dim": 128,
+        "depth": 4,
+        "num_heads": 4,
+        "ffn_dim": 256,
+        "layer_norm_eps": 1e-06,
+        "freeze_position": true,
+        "freeze_layer_norm": true,
+        "freeze_patch_embed_manual": true,
+        "readout_mode": "standard"
+      },
+      "frozen_before": "915b23062b08ef68ede2b026c033c2bfca71c056f7992d5dcf74b4a136c339d1",
+      "frozen_after": "915b23062b08ef68ede2b026c033c2bfca71c056f7992d5dcf74b4a136c339d1",
+      "train_accuracy": null,
+      "test_accuracy": null,
+      "diagnostic_loss": 1.2388675212860107,
+      "cls_fraction": [
+        0.525538434337455,
+        0.4609858501181273,
+        0.48161548976675805,
+        0.753385653432322
+      ]
+    },
+    "grape": {
+      "checkpoint": "original_artifact_c8284a222793",
+      "checkpoint_sha256": "cc23b694687500bbbdd371367364f79cb2675ac60efd64204281f0dcca8791d9",
+      "checkpoint_epoch": 100,
+      "learning": {
+        "method": "grape",
+        "loss": "cross_entropy",
+        "parameter_scope": "all",
+        "optimizer": "adam",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "feedback_column_lr": 0.1,
+        "aggregation": "mean_estimate",
+        "feedback_seed": 100,
+        "calibration_lr": 0.01,
+        "calibration_momentum": 0.9
+      },
+      "model": {
+        "image_size": 32,
+        "patch_size": 4,
+        "channels": 3,
+        "num_classes": 10,
+        "embed_dim": 128,
+        "depth": 4,
+        "num_heads": 4,
+        "ffn_dim": 256,
+        "layer_norm_eps": 1e-06,
+        "freeze_position": true,
+        "freeze_layer_norm": true,
+        "freeze_patch_embed_manual": true,
+        "readout_mode": "standard"
+      },
+      "frozen_before": "02ee0c843b2725d82b71cb8a3baef3a2a55ce4c10b48ad588b2d3b018c6921be",
+      "frozen_after": "02ee0c843b2725d82b71cb8a3baef3a2a55ce4c10b48ad588b2d3b018c6921be",
+      "train_accuracy": null,
+      "test_accuracy": null,
+      "diagnostic_loss": 1.44953191280365,
+      "cls_fraction": [
+        0.01352451975238651,
+        0.01352451975238651,
+        0.01352451975238651,
+        0.01352451975238651
+      ]
+    },
+    "focf": {
+      "checkpoint": "original_artifact_a67386b2f4d2",
+      "checkpoint_sha256": "a2fa661901ff80d544e7ec4b4b007de03dd3780a6c55c6983668fabf22cfb18f",
+      "checkpoint_epoch": 100,
+      "learning": {
+        "method": "component",
+        "loss": "cross_entropy",
+        "parameter_scope": "all",
+        "optimizer": "adam",
+        "learning_rate": 0.0001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "feedback_column_lr": 0.1,
+        "aggregation": "mean_estimate",
+        "feedback_seed": 100,
+        "calibration_lr": 0.01,
+        "calibration_momentum": 0.9,
+        "output_probes": 0,
+        "operator_ridge": 0.1,
+        "mirror_warmup": 16,
+        "mirror_beta": 0.9,
+        "mirror_probe_count": 16,
+        "probe_epsilon": 0.001,
+        "trust_ratio": 0.5,
+        "validation_probes": 8
+      },
+      "model": {
+        "image_size": 32,
+        "patch_size": 4,
+        "channels": 3,
+        "num_classes": 10,
+        "embed_dim": 128,
+        "depth": 4,
+        "num_heads": 4,
+        "ffn_dim": 256,
+        "layer_norm_eps": 1e-06,
+        "freeze_position": true,
+        "freeze_layer_norm": true,
+        "freeze_patch_embed_manual": true,
+        "readout_mode": "standard"
+      },
+      "frozen_before": "a3023c86b5a023d7eded91ceb0826eadf0f1bbddbd1b0d1c0d35b207aad73315",
+      "frozen_after": "a3023c86b5a023d7eded91ceb0826eadf0f1bbddbd1b0d1c0d35b207aad73315",
+      "train_accuracy": null,
+      "test_accuracy": null,
+      "diagnostic_loss": 1.3271538019180298,
+      "cls_fraction": [
+        0.9102610699694837,
+        0.8980291053873157,
+        0.8706530171659772,
+        0.9302037044445824
+      ]
+    }
+  },
+  "checks": {
+    "bp_contrast_contraction_relative_error": 6.802983989473432e-07,
+    "grape_previous_figure_relative_error": 6.668946639365458e-08,
+    "focf_selected_acceptance": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "focf_dictionary_modes": 43
+  },
+  "selection": "Same four prespecified input images as the previous Figure 1A",
+  "error": "Fixed truck-minus-class-mean output contrast for every model and image",
+  "normalization": "Whole credit vector, including CLS, normalized to unit Euclidean norm",
+  "color_scale": "One common linear magnitude scale across all methods and images",
+  "method": "frozen_cross_method_credit_visualization",
+  "parameter_updates": 0,
+  "feedback_updates": 0,
+  "test_accessed": false,
+  "model_seeds": 1,
+  "wall_clock_seconds": 5.382278508506715,
+  "peak_gpu_memory_mb": 1406.66650390625
+}

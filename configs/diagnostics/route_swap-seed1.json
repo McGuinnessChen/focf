@@ -1,0 +1,8 @@
+{
+  "seed": 1,
+  "checkpoint": "checkpoints/diagnostic-focf-seed1.pt",
+  "batch_size": 32,
+  "eval_batches": 32,
+  "heldout_probes": 32,
+  "output": "outputs/diagnostics/route_swap-seed1.json"
+}

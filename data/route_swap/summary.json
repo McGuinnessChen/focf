@@ -1,0 +1,146 @@
+{
+  "status": "completed",
+  "protocol": {
+    "validation_only": true,
+    "labels_used": false,
+    "parameter_updates": 0,
+    "mirror_updates": 0,
+    "operator_reconstruction": "Training trace fit and acceptance with saved frozen mirrors; fresh probes, not original minibatch replay",
+    "swap": "Cyclic derangement among nonzero accepted corrections within each batch and boundary",
+    "recipient_carrier_preserved": true,
+    "recipient_correction_norm_preserved": true,
+    "refit_after_swap": false,
+    "reaccept_after_swap": false,
+    "heldout_probe_rng_independent": true,
+    "aggregation": "Sample-weighted over all three boundaries",
+    "accuracy_and_loss": "Not applicable: frozen response diagnostic, not classifier evaluation"
+  },
+  "aggregate_heldout_relative_mse": {
+    "identity": {
+      "n": 3,
+      "mean": 1.0,
+      "sample_sd": 0.0
+    },
+    "matched": {
+      "n": 3,
+      "mean": 0.523262683853507,
+      "sample_sd": 0.009161760671577016
+    },
+    "swapped": {
+      "n": 3,
+      "mean": 0.8833291903237502,
+      "sample_sd": 0.00886969562822298
+    }
+  },
+  "paired_swapped_minus_matched": {
+    "n": 3,
+    "mean": 0.36006650647024313,
+    "sample_sd": 0.013860727763252036
+  },
+  "per_seed": [
+    {
+      "seed": 0,
+      "metrics": {
+        "all": {
+          "identity": 1.0,
+          "matched": 0.5233231489410003,
+          "swapped": 0.8732471339205901,
+          "sample_boundary_pairs": 3000
+        },
+        "swap_eligible": {
+          "identity": 1.0,
+          "matched": 0.5233231489410003,
+          "swapped": 0.8732471339205901,
+          "sample_boundary_pairs": 3000
+        }
+      }
+    },
+    {
+      "seed": 1,
+      "metrics": {
+        "all": {
+          "identity": 1.0,
+          "matched": 0.5140708402842283,
+          "swapped": 0.8899308608770371,
+          "sample_boundary_pairs": 3000
+        },
+        "swap_eligible": {
+          "identity": 1.0,
+          "matched": 0.5140708402842283,
+          "swapped": 0.8899308608770371,
+          "sample_boundary_pairs": 3000
+        }
+      }
+    },
+    {
+      "seed": 2,
+      "metrics": {
+        "all": {
+          "identity": 1.0,
+          "matched": 0.5323940623352925,
+          "swapped": 0.8868095761736234,
+          "sample_boundary_pairs": 3000
+        },
+        "swap_eligible": {
+          "identity": 1.0,
+          "matched": 0.5323940623352925,
+          "swapped": 0.8868095761736234,
+          "sample_boundary_pairs": 3000
+        }
+      }
+    }
+  ],
+  "by_boundary": {
+    "0": {
+      "identity": {
+        "n": 3,
+        "mean": 1.0,
+        "sample_sd": 0.0
+      },
+      "matched": {
+        "n": 3,
+        "mean": 0.6437105323771636,
+        "sample_sd": 0.013280138054123808
+      },
+      "swapped": {
+        "n": 3,
+        "mean": 0.8635162311593692,
+        "sample_sd": 0.012066667634463023
+      }
+    },
+    "1": {
+      "identity": {
+        "n": 3,
+        "mean": 1.0,
+        "sample_sd": 0.0
+      },
+      "matched": {
+        "n": 3,
+        "mean": 0.562750320126613,
+        "sample_sd": 0.01695099380643677
+      },
+      "swapped": {
+        "n": 3,
+        "mean": 0.8848850045998892,
+        "sample_sd": 0.004236552885046012
+      }
+    },
+    "2": {
+      "identity": {
+        "n": 3,
+        "mean": 1.0,
+        "sample_sd": 0.0
+      },
+      "matched": {
+        "n": 3,
+        "mean": 0.3633271990567446,
+        "sample_sd": 0.014420744182250853
+      },
+      "swapped": {
+        "n": 3,
+        "mean": 0.9015863352119923,
+        "sample_sd": 0.011495256280353913
+      }
+    }
+  }
+}

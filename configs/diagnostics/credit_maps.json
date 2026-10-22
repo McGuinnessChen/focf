@@ -1,0 +1,15 @@
+{
+  "seed": 0,
+  "boundary": 0,
+  "output_contrast_class": 9,
+  "batch_size": 32,
+  "probe_seed": 99117,
+  "checkpoint_report": "configs/diagnostics/routing_checkpoints.json",
+  "checkpoints": {
+    "bp": "checkpoints/diagnostic-bp-seed0.pt",
+    "grape": "checkpoints/diagnostic-grape-seed0.pt",
+    "component": "checkpoints/diagnostic-focf-seed0.pt"
+  },
+  "baseline_arrays": "data/routing/grape_seed0.npz",
+  "output_prefix": "outputs/diagnostics/fixed_error"
+}

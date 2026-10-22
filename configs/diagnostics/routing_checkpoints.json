@@ -1,0 +1,34 @@
+{
+  "runs": [
+    {
+      "method": "grape",
+      "seed": 0,
+      "checkpoint": "checkpoints/diagnostic-grape-seed0.pt"
+    },
+    {
+      "method": "grape",
+      "seed": 1,
+      "checkpoint": "checkpoints/diagnostic-grape-seed1.pt"
+    },
+    {
+      "method": "grape",
+      "seed": 2,
+      "checkpoint": "checkpoints/diagnostic-grape-seed2.pt"
+    },
+    {
+      "method": "grape_T10",
+      "seed": 0,
+      "checkpoint": "checkpoints/diagnostic-grape_T10-seed0.pt"
+    },
+    {
+      "method": "grape_T10",
+      "seed": 1,
+      "checkpoint": "checkpoints/diagnostic-grape_T10-seed1.pt"
+    },
+    {
+      "method": "grape_T10",
+      "seed": 2,
+      "checkpoint": "checkpoints/diagnostic-grape_T10-seed2.pt"
+    }
+  ]
+}
